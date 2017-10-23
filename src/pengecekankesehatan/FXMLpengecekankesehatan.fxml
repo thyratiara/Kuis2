@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="380.0" style="-fx-background-color: ;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pengecekankesehatan.FXMLpengecekankesehatanController">
+   <children>
+      <Label layoutX="129.0" layoutY="21.0" text="Pengecekan Kesehatan" />
+      <Label layoutX="41.0" layoutY="87.0" text="Nama" />
+      <Label layoutX="43.0" layoutY="126.0" text="Tinggi" />
+      <Label layoutX="43.0" layoutY="165.0" text="Berat Badan" />
+      <Label layoutX="43.0" layoutY="195.0" text="Jenis Kelamin" />
+      <RadioButton fx:id="rdLaki" layoutX="129.0" layoutY="195.0" mnemonicParsing="false" text="Laki Laki" />
+      <RadioButton fx:id="rdPerempuan" layoutX="129.0" layoutY="230.0" mnemonicParsing="false" text="Perempuan" />
+      <Button fx:id="buttonProses" layoutX="88.0" layoutY="270.0" mnemonicParsing="false" onAction="#proses" style="-fx-background-color: yellow;" text="Proses" />
+      <Button fx:id="buttonReset" layoutX="237.0" layoutY="270.0" mnemonicParsing="false" onAction="#hapus" style="-fx-background-color: yellow;" text="Reset" />
+      <TextArea fx:id="saran" layoutX="54.0" layoutY="389.0" prefHeight="39.0" prefWidth="272.0" />
+      <TextArea fx:id="hasil" layoutX="54.0" layoutY="435.0" prefHeight="39.0" prefWidth="272.0" />
+      <Label layoutX="54.0" layoutY="321.0" text="Berat Ideal Anda" />
+      <Label layoutX="54.0" layoutY="366.0" text="Hasil Analisa Kesehatan" />
+      <TextField fx:id="beratIdeal" layoutX="151.0" layoutY="317.0" prefHeight="25.0" prefWidth="64.0" />
+      <Label layoutX="232.0" layoutY="321.0" text="Kg" />
+      <Separator layoutX="90.0" layoutY="50.0" prefWidth="200.0" />
+      <JFXTextField fx:id="editnama" layoutX="126.0" layoutY="80.0" />
+      <JFXTextField fx:id="edittinggi" layoutX="126.0" layoutY="115.0" />
+      <JFXTextField fx:id="editberat" layoutX="127.0" layoutY="150.0" />
+   </children>
+</AnchorPane>
